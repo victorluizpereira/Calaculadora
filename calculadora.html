@@ -1,0 +1,54 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" type="text/css" href="./calculadora.css">
+<script src="./calculadora.js"></script>
+<meta charset="utf-8">
+<title>calculadora</title>
+</head>
+<body>
+
+	<div class="calculadora">
+		
+		<h2>Calculadora</h2>
+
+		<!-- painel de entrada e saída de valores -->
+		<form name="painel">
+			<input type="text" id="result" name="input">
+		</form>
+			
+		<!-- primeira linha de botões -->
+		<button onclick="limpar()">cl</button>
+		<!-- descobrir como dar backspace -->
+		<button onclick="limparultim()">bks</button>
+		<button value="/" onclick="concat(value)">/</button>
+		<button value="*" onclick="concat(value)">*</button>
+
+		<!-- segunda linha de botões -->
+		<button value="7" onclick="concat(value)">7</button>
+		<button value="8" onclick="concat(value)">8</button>
+		<button value="9" onclick="concat(value)">9</button>
+		<button value="-" onclick="concat(value)">-</button>
+
+		<!-- terceira linha de botões -->
+		<button value="4" onclick="concat(value)">4</button>
+		<button value="5" onclick="concat(value)">5</button>
+		<button value="6" onclick="concat(value)">6</button>
+		<button value="+" onclick="concat(value)">+</button>
+
+		<!-- quarta linha de botões -->
+		<button value="1" onclick="concat(value)">1</button>
+		<button value="2" onclick="concat(value)">2</button>
+		<button value="3" onclick="concat(value)">3</button>
+		<!-- descubrir como fazer ansestrais -->
+		<button id="ans" value="ANS" onclick="concat(value); ans();">ANS</button>
+
+		<!-- quinta linha de botões -->
+		<button value="0" onclick="concat(value)">0</button>
+		<button value="." onclick="concat(value)">.</button>
+		<button id="igual" onclick="resultado()">=</button>	
+
+	</div>
+
+</body>
+</html>
